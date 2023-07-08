@@ -6,7 +6,7 @@ import AuthLinks from "./AuthLinks";
 const Navbar = (): JSX.Element => {
   return (
     <nav className="bg-primary">
-      <div className="container flex  flex-wrap py-3 lg:gap-x-[21.875rem] capitalize">
+      <div className="container flex flex-wrap py-3 lg:gap-x-[21.875rem] capitalize">
         <Logo />
         <div className="flex items-center flex-grow font-medium text-primary">
           <Links />
