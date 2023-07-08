@@ -21,6 +21,7 @@ module.exports = {
         third: withOpacity("color-third"),
         fourth: withOpacity("color-fifth"),
         fifth: withOpacity("color-sixth"),
+        sixth: withOpacity("color-eighth"),
         icon: {
           one: "var(--color-icon-one)",
           two: "var(--color-icon-two)",
@@ -42,17 +43,26 @@ module.exports = {
       },
       fontWeight: {
         regular: 400,
+        medium: 500,
         semiBold: 600,
         bold: 700,
       },
       colors: {
         primary: withOpacity("color-fourth"),
         secondary: withOpacity("color-fifth"),
+        seventh: withOpacity("color-seventh"),
       },
       gridTemplateColumns: {},
     },
     container: {
       center: true,
+      padding: "1rem",
+      screens: {
+        sm: "40rem",
+        md: "48rem",
+        lg: "64rem",
+        xl: "90rem",
+      },
     },
   },
   plugins: [],

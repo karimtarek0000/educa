@@ -1,0 +1,6 @@
+.authLinksLogIn {
+  @apply relative after:w-full after:h-1 after:bg-sixth after:absolute after:-bottom-2 after:start-0;
+}
+.authLinksSignUp {
+  @apply px-10 py-3 transition-colors duration-300 rounded-lg hover:bg-opacity-60 bg-fifth text-seventh;
+}
