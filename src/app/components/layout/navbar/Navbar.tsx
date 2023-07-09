@@ -14,7 +14,7 @@ const Navbar = (): JSX.Element => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   const variantsLinksWrapper = {
-    closed: { x: "100%", opacity: 1 },
+    closed: { x: "100%", opacity: 0 },
     open: { x: 10, opacity: 1 },
   };
 
