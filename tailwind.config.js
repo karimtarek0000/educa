@@ -61,6 +61,9 @@ module.exports = {
     container: {
       center: true,
       padding: "1rem",
+      screens: {
+        xl: "90rem", // 1440px
+      },
     },
   },
   plugins: [],

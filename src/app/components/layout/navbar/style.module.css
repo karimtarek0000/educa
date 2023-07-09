@@ -1,5 +1,5 @@
 .navWrapper {
-  @apply flex flex-wrap py-3 lg:gap-x-[3.125rem] xl:gap-x-[16.875rem] capitalize;
+  @apply flex flex-wrap py-3 lg:gap-x-[2rem] xl:gap-x-[15rem] capitalize;
 }
 
 .authLinksLogIn {
