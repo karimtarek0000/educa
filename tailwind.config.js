@@ -32,14 +32,14 @@ module.exports = {
       fontSize: {
         11: "0.6875rem",
         12: "0.75rem",
-        14: "0.875rem",
+        14: ["0.875rem", "1.8rem"],
         15: "0.9375rem",
         18: "1.125rem",
         24: "1.5rem",
         28: "1.75rem",
         30: "1.875rem",
         42: "2.625rem",
-        85: "5.3125rem",
+        85: ["5.3125rem", "5.5rem"],
         100: "6.25rem",
       },
       fontWeight: {
@@ -51,7 +51,7 @@ module.exports = {
       colors: {
         primary: withOpacity("color-fourth"),
         secondary: withOpacity("color-fifth"),
-        seventh: withOpacity("color-seventh"),
+        third: withOpacity("color-seventh"),
       },
       borderColor: {
         primary: 'var("--color-sixth")',

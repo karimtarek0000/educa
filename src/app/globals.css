@@ -16,16 +16,33 @@
     --color-icon-two: #ffc700;
     --color-icon-three: #7119ef;
   }
+
+  html {
+    font-size: 100%;
+
+    @media only screen and (max-width: 48rem) {
+      font-size: 87.5%;
+    }
+
+    @media only screen and (max-width: 28rem) {
+      font-size: 74.5%;
+    }
+  }
 }
 
 @layer utilities {
   .gradient-button {
+    @apply transition-all duration-700 ease-in-out;
     background: rgb(161, 223, 255);
     background: linear-gradient(
-      100deg,
+      90deg,
       rgba(161, 223, 255, 1) 0%,
-      rgba(116, 207, 255, 1) 66%,
+      rgba(116, 207, 255, 1) 30%,
       rgba(69, 191, 255, 1) 100%
     );
+
+    &:hover {
+      background-position: 12.5rem;
+    }
   }
 }

@@ -6,7 +6,7 @@
   @apply relative after:w-full after:h-1 after:bg-sixth after:absolute after:-bottom-2 after:start-0;
 }
 .authLinksSignUp {
-  @apply px-10 py-3 transition-colors duration-300 rounded-lg hover:bg-opacity-60 bg-fifth text-seventh;
+  @apply px-10 py-3 transition-colors duration-300 rounded-lg hover:bg-opacity-60 bg-fifth text-third;
 }
 .navLinksWrapper {
   @apply flex items-center font-medium lg:flex-grow text-primary max-lg:absolute max-lg:w-[15.625rem] max-lg:h-screen max-lg:top-0 max-lg:end-0 max-lg:flex-col max-lg:shadow-xl max-lg:z-10 max-lg:bg-white lg:!translate-x-0 lg:!opacity-100;
