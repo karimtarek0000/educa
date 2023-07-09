@@ -46,11 +46,3 @@ const Navbar = (): JSX.Element => {
 };
 
 export default Navbar;
-
-/*
-// Open
-<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 26L29 3" stroke="#292E37" stroke-width="5" stroke-linecap="round"/>
-<path d="M3 3L29 26" stroke="#292E37" stroke-width="5" stroke-linecap="round"/>
-</svg>
-*/
