@@ -40,9 +40,8 @@
       rgba(116, 207, 255, 1) 30%,
       rgba(69, 191, 255, 1) 100%
     );
-
-    &:hover {
-      background-position: 12.5rem;
-    }
+  }
+  .gradient-button:hover {
+    background-position: 12.5rem;
   }
 }
