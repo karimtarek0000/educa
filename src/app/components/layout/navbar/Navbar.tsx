@@ -22,9 +22,13 @@ const Navbar = (): JSX.Element => {
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="bg-primary"
+      className="overflow-hidden bg-primary"
     >
       <div className="container">
+        <div className="flex justify-center my-2 lg:hidden">
+          <Badge />
+        </div>
+
         <div className={navWrapper}>
           <Logo />
           <motion.div
