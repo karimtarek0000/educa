@@ -1,0 +1,30 @@
+.header {
+  @apply flex items-center min-h-[80vh] lg:min-h-screen bg-primary;
+}
+.headerWrapper {
+  @apply container relative grid flex-1 lg:grid-cols-2;
+}
+.headerCol1 {
+  @apply relative z-[1] max-md:text-center md:ps-2 lg:ps-20;
+}
+.headerCol2 {
+  @apply flex-1 max-lg:absolute max-lg:top-0 lg:relative -end-5;
+}
+.head {
+  @apply mt-4 font-bold text-85 text-primary;
+}
+.desc {
+  @apply mt-10 md:max-w-md text-18 lg:text-14 font-regular text-primary opacity-80;
+}
+.wrapperLinks {
+  @apply flex items-center gap-5 text-18 lg:text-14 font-semiBold max-md:flex-col;
+}
+.linkGetStarted {
+  @apply inline-block py-4 mt-10 text-center text-white capitalize rounded-lg shadow-lg px-7 max-md:w-4/5;
+}
+.linkWatchOur {
+  @apply flex flex-row items-center gap-3 mt-10 capitalize rounded-lg max-md:mt-0 text-third;
+}
+.linkWatchOurIcon {
+  @apply w-[3.75rem] h-[3.75rem] flex items-center justify-center bg-fifth rounded-full;
+}
