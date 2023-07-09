@@ -1,35 +1,56 @@
-import Link from "next/link";
+"use client";
+
+import { motion, useCycle } from "framer-motion";
 import Logo from "../logo/Logo";
-import Links from "./Links";
 import AuthLinks from "./AuthLinks";
+import Links from "./Links";
+import Style from "./style.module.css";
+import Toggler from "./Toggler";
+import Badge from "../badge/Badge";
+
+const { navLinksWrapper, navWrapper } = Style;
 
 const Navbar = (): JSX.Element => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+
+  const variantsLinksWrapper = {
+    closed: { x: "100%", opacity: 1 },
+    open: { x: 10, opacity: 1 },
+  };
+
   return (
-    <nav className="bg-primary">
-      <div className="container flex flex-wrap py-3 lg:gap-x-[21.875rem] capitalize">
-        <Logo />
-        <div className="flex items-center flex-grow font-medium text-primary">
-          <Links />
-          <AuthLinks />
+    <motion.nav
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+      className="bg-primary"
+    >
+      <div className="container">
+        <div className={navWrapper}>
+          <Logo />
+          <motion.div
+            variants={variantsLinksWrapper}
+            transition={{ duration: 0.7, type: "tween", ease: "anticipate" }}
+            className={navLinksWrapper}
+          >
+            <Links />
+            <div className="max-lg:hidden">
+              <Badge />
+            </div>
+            <AuthLinks />
+          </motion.div>
+          <Toggler toggle={() => toggleOpen()} />
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
 export default Navbar;
 
 /*
-// Close
-<svg width="57" height="46" viewBox="0 0 57 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 5H51.7403" stroke="#292E37" stroke-width="9" stroke-linecap="round"/>
-<path d="M20 23H51.7403" stroke="#292E37" stroke-width="9" stroke-linecap="round"/>
-<path d="M9 41H51.7403" stroke="#292E37" stroke-width="9" stroke-linecap="round"/>
-</svg>
-
 // Open
-<svg width="52" height="48" viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 43L47.5 4.5" stroke="#292E37" stroke-width="9" stroke-linecap="round"/>
-<path d="M5 4.5L47.5 43" stroke="#292E37" stroke-width="9" stroke-linecap="round"/>
+<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 26L29 3" stroke="#292E37" stroke-width="5" stroke-linecap="round"/>
+<path d="M3 3L29 26" stroke="#292E37" stroke-width="5" stroke-linecap="round"/>
 </svg>
 */

@@ -1,0 +1,7 @@
+.badge {
+  @apply flex items-center justify-center p-2 mx-3 border rounded-full border-primary gap-x-2;
+}
+
+.badgeKeyword {
+  @apply px-3 py-1 text-white rounded-full text-12 bg-icon-one;
+}

@@ -31,6 +31,7 @@ module.exports = {
       fontFamily: "var(--font-poppins)",
       fontSize: {
         11: "0.6875rem",
+        12: "0.75rem",
         14: "0.875rem",
         15: "0.9375rem",
         18: "1.125rem",
@@ -52,17 +53,14 @@ module.exports = {
         secondary: withOpacity("color-fifth"),
         seventh: withOpacity("color-seventh"),
       },
+      borderColor: {
+        primary: 'var("--color-sixth")',
+      },
       gridTemplateColumns: {},
     },
     container: {
       center: true,
       padding: "1rem",
-      screens: {
-        sm: "40rem",
-        md: "48rem",
-        lg: "64rem",
-        xl: "90rem",
-      },
     },
   },
   plugins: [],
