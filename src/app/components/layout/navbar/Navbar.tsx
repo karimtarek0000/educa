@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useCycle } from "framer-motion";
+import { m, useCycle } from "framer-motion";
 import Logo from "../logo/Logo";
 import AuthLinks from "./AuthLinks";
 import Links from "./Links";
@@ -19,7 +19,7 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <motion.nav
+    <m.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
       className="overflow-hidden bg-primary"
@@ -31,7 +31,7 @@ const Navbar = (): JSX.Element => {
 
         <div className={navWrapper}>
           <Logo />
-          <motion.div
+          <m.div
             variants={variantsLinksWrapper}
             transition={{ duration: 0.7, type: "tween", ease: "anticipate" }}
             className={navLinksWrapper}
@@ -41,11 +41,11 @@ const Navbar = (): JSX.Element => {
               <Badge />
             </div>
             <AuthLinks />
-          </motion.div>
+          </m.div>
           <Toggler toggle={() => toggleOpen()} />
         </div>
       </div>
-    </motion.nav>
+    </m.nav>
   );
 };
 

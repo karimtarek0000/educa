@@ -1,9 +1,7 @@
 const SectionOne = (): JSX.Element => {
   return (
     <>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, deleniti.
-      </p>
+      <h1>Section one</h1>
     </>
   );
 };
